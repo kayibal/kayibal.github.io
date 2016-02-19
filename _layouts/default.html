@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }} - {{ site.name }}</title>
+    <title>{{ site.name }}</title>
     <meta name="description" content="{{ page.title }} - {{ site.name }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="{{ page.keywords }}, {{ site.keywords }}" />
@@ -52,12 +52,6 @@
     <header id="header" class="row">
 
         <div class="small-12 columns">
-            <section class="right show-for-medium-up mam">
-                <ul class="inline-list">
-                    {% include nav.html %}
-                </ul>
-            </section>
-
             <section class="right show-for-small">
                 <ul class="inline-list mam">
                 <li>
@@ -66,9 +60,6 @@
                 </li>
                 </ul>
             </section>
-
-            <h1><a href="{{ site.url }}">{{ site.brand }}</a></h1>
-
         </div>
     </header>
 
@@ -93,18 +84,13 @@
         
 
         <footer class="site-footer row" role="contentinfo">
-        <hr/>
           <div class="large-12 columns">
-            <ul class="inline-list">
-                {% include nav.html %}
-            </ul>
-            <p class="quiet copyright right"> <a href="https://twitter.com/{{ site.twitter }}">
-                <i class="fa fa-twitter">
-                </i>
-             @{{ site.twitter }}</a>, <a href="https://github.com/{{ site.github }}/">
+            <p class="quiet copyright right">
+
+             <a href="https://github.com/{{ site.github }}/">
                 <i class="fa fa-github">
                 </i>
-             @{{ site.github }}</a> {{ site.year }}.</p>
+             {{ site.github }}</a> {{ site.year }}.</p>
           </div>
         </footer>
 
